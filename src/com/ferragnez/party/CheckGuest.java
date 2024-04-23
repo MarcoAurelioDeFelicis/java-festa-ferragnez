@@ -20,16 +20,22 @@ public class CheckGuest {
 		
 		for (int i = 0; i < invitati.length; i++ ) {
 			
-			if (nome == invitati [i]) {
-				System.out.println ("Puoi entrare al party");
-			    break;
+			if (invitati[i].equals(nome)){
+				presente = true;
+			   }
+			break;
 		    }
 			
-		    if (i == invitati.length - 1) {
-				System.out.println("Non puoi entrare alla festa");
+		    if (presente == true) {
+		    	System.out.println ("Puoi entrare al party");
+				
+			}else {
+				System.out.println ("Non puoi entrare al party");
+				
 			}
+		    
 			
 		}
 	}
 
-}
+
