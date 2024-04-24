@@ -22,8 +22,8 @@ public class CheckGuest {
 			
 			if (invitati[i].equals(nome)){
 				presente = true;
+				break;
 			   }
-			break;
 		    }
 			
 		    if (presente == true) {
